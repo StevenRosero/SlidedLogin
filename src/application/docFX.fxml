@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+
+<AnchorPane prefHeight="600.0" prefWidth="900.0" stylesheets="@application.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.Controller">
+   <children>
+      <Pane fx:id="pane1" layoutX="-354.0" layoutY="-228.0" prefHeight="744.0" prefWidth="1207.0" styleClass="pane1" stylesheets="@application.css" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" />
+      <Pane fx:id="pane2" prefHeight="516.0" prefWidth="853.0" styleClass="pane2" stylesheets="@application.css" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" />
+      <Pane fx:id="pane3" prefHeight="516.0" prefWidth="853.0" styleClass="pane3" stylesheets="@application.css" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" />
+      <Pane fx:id="pane4" prefHeight="516.0" prefWidth="853.0" styleClass="pane4" stylesheets="@application.css" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" />
+      <Pane opacity="0.89" prefHeight="410.0" prefWidth="290.0" style="-fx-background-color: #fff; -fx-background-radius: 50px;" AnchorPane.leftAnchor="300.0" AnchorPane.topAnchor="50.0">
+         <effect>
+            <DropShadow />
+         </effect>
+         <children>
+            <ImageView fitHeight="191.0" fitWidth="270.0" layoutX="9.0" layoutY="-16.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../Mesa%20de%20trabajo%201@3x.png" />
+               </image>
+            </ImageView>
+            <JFXTextField alignment="TOP_CENTER" labelFloat="true" layoutX="25.0" layoutY="158.0" prefHeight="33.0" prefWidth="238.0" promptText="USUARIO" style="-fx-border-color: #0887ff; -fx-border-radius: 5px;" />
+            <JFXTextField alignment="CENTER" labelFloat="true" layoutX="26.0" layoutY="215.0" prefHeight="33.0" prefWidth="238.0" promptText="CONTRASEÑA" style="-fx-border-color: #0887ff; -fx-border-radius: 5px;" />
+            <JFXButton layoutX="71.0" layoutY="286.0" prefHeight="31.0" prefWidth="146.0" style="-fx-background-color: #0887ff; -fx-background-radius: 50px;" text="COMENZAR" textAlignment="CENTER" textFill="WHITE" />
+            <JFXButton layoutX="51.0" layoutY="358.0" text="¿Olvidaste tu contraseña?" textFill="#0ab98d" underline="true" />
+         </children>
+      </Pane>
+   </children>
+</AnchorPane>
