@@ -30,7 +30,7 @@ public class Controller {
 	}
 	private void backgroundAnimation() {
 
-		FadeTransition fadeTransition = new FadeTransition(Duration.seconds(5),
+		FadeTransition fadeTransition = new FadeTransition(Duration.seconds(20),
 				pane4);
 		fadeTransition.setFromValue(1);
 		fadeTransition.setToValue(0);
@@ -40,14 +40,14 @@ public class Controller {
 				.setOnFinished(event -> {
 
 					FadeTransition fadeTransition1 = new FadeTransition(
-							Duration.seconds(3), pane3);
+							Duration.seconds(5), pane3);
 					fadeTransition1.setFromValue(1);
 					fadeTransition1.setToValue(0);
 					fadeTransition1.play();
 
 					fadeTransition1.setOnFinished(event1 -> {
 						FadeTransition fadeTransition2 = new FadeTransition(
-								Duration.seconds(3), pane2);
+								Duration.seconds(5), pane2);
 						fadeTransition2.setFromValue(1);
 						fadeTransition2.setToValue(0);
 						fadeTransition2.play();
@@ -55,7 +55,7 @@ public class Controller {
 						fadeTransition2.setOnFinished(event2 -> {
 
 							FadeTransition fadeTransition0 = new FadeTransition(
-									Duration.seconds(3), pane2);
+									Duration.seconds(5), pane2);
 							fadeTransition0.setFromValue(0);
 							fadeTransition0.setToValue(1);
 							fadeTransition0.play();
@@ -63,7 +63,7 @@ public class Controller {
 							fadeTransition0.setOnFinished(event3 -> {
 
 								FadeTransition fadeTransition11 = new FadeTransition(
-										Duration.seconds(3), pane3);
+										Duration.seconds(5), pane3);
 
 								fadeTransition11.setFromValue(0);
 								fadeTransition11.setToValue(1);
@@ -72,7 +72,7 @@ public class Controller {
 								fadeTransition11.setOnFinished(event4 -> {
 
 									FadeTransition fadeTransition22 = new FadeTransition(
-											Duration.seconds(3), pane4);
+											Duration.seconds(5), pane4);
 
 									fadeTransition22.setFromValue(0);
 									fadeTransition22.setToValue(1);
